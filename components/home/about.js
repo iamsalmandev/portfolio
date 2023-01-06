@@ -10,12 +10,12 @@ const About = () => {
   }, []);
 
   return (
-    <section className={classes.about} id='about'>
+    <section className={classes.about} id="about">
       <div className={classes.container}>
-        <h2 data-aos='slide-right'>About me</h2>
+        <h2 data-aos="slide-right">About me</h2>
 
         <div className={classes.row}>
-          <div className={classes.columnLeft} data-aos='fade-right'>
+          <div className={classes.columnLeft} data-aos="fade-right">
             <h3>
               Moved by the desire to work with something creative I began
               learning Web Development in 2017.
@@ -23,11 +23,12 @@ const About = () => {
             <p>
               My developer career started with a great emphasis on e-commerce as
               a Shopware Front End Developer and I even worked on the
-              development of <i className='fas fa-link'></i>{' '}
+              development of <i className="fas fa-link"></i>{' '}
               <a
-                href='https://github.com/shopware/platform'
-                target='_blank'
-                rel='noreferrer'>
+                href="https://github.com/shopware/platform"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Shopware 6
               </a>
               . Later on I specialized in React and it&apos;s ecosystem. I
@@ -52,21 +53,21 @@ const About = () => {
           <div className={classes.columnRight}>
             <div className={classes.imageContainer}>
               <Image
-                src='/portfolio/images/profile-pic-2.webp'
+                src="/images/profile-pic-2.webp"
                 width={600}
                 height={600}
-                alt='profile-pic'
-                data-aos='fade-left'
+                alt="profile-pic"
+                data-aos="fade-left"
               />
             </div>
-            <div className={classes.quote} data-aos='fade-right'>
+            <div className={classes.quote} data-aos="fade-right">
               &quot;Perspective is everything and everything starts with a
               dot.&quot;
               <span className={classes.tooltip}>
                 In case you were wondering about my logo...{' '}
                 <Image
-                  src='/portfolio/images/icons/mindblown.png'
-                  alt='mindblown'
+                  src="/images/icons/mindblown.png"
+                  alt="mindblown"
                   width={20}
                   height={20}
                 />

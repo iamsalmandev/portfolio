@@ -9,7 +9,7 @@ tech: ['Next.js']
 
 # How to deploy a static Next.js website on Github Pages
 
-![Image ...](/portfolio/images/posts/static-site-to-github-pages/github.jpg)
+![Image ...](/images/posts/static-site-to-github-pages/github.jpg)
 
 ##### Using Next.js version 12.1.6
 
@@ -27,7 +27,7 @@ The original idea was to **next build** and **next export** the project and then
 
 1. In your repository go to actions and add a workflow by choosing Node.js:
 
-   ![Image ...](/portfolio/images/posts/static-site-to-github-pages/github-actions-01.jpg)
+   ![Image ...](/images/posts/static-site-to-github-pages/github-actions-01.jpg)
 
 2. You'll get a **node.js.yml** file like the one bellow:
 
@@ -137,19 +137,19 @@ The original idea was to **next build** and **next export** the project and then
 
    ```jsx
    <Image
-     src='/images/profile-pic.png'
+     src="/images/profile-pic.png"
      width={360}
      height={360}
-     alt='profile-pic'
+     alt="profile-pic"
    />
    ```
 
    ```jsx
    <Image
-     src='/<your github repo>/images/profile-pic.png'
+     src="/<your github repo>/images/profile-pic.png"
      width={360}
      height={360}
-     alt='profile-pic'
+     alt="profile-pic"
    />
    ```
 

@@ -3,10 +3,14 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    loader: 'akamai',
-    path: isProd ? 'https://iamsalmandev.vercel.app' : 'http://localhost:3000/',
+    domains: ['http://localhost:3000'],
   },
-  basePath: '/portfolio',
+  // images: {
+  //   loader: 'akamai',
+  //   path: isProd
+  //     ? 'https://github.com/iamsalmandev/'
+  //     : 'http://localhost:3000/',
+  // },
 };
 
 module.exports = nextConfig;

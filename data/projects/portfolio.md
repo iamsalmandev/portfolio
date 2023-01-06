@@ -105,14 +105,14 @@ function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = useState('dark');
   return (
     <>
-      <div className='app' data-theme={theme}>
+      <div className="app" data-theme={theme}>
         <Navbar theme={setTheme}>
           <Head>
             <meta
-              name='viewport'
-              content='width=device-width, initial-scale=1'
+              name="viewport"
+              content="width=device-width, initial-scale=1"
             />
-            <link rel='shortcut icon' href='/portfolio/favicon.ico' />
+            <link rel="shortcut icon" href="/portfolio/favicon.ico" />
           </Head>
           <Component {...pageProps} currentTheme={theme} />
           <Footer />
@@ -145,25 +145,25 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang='en'>
+      <Html lang="en">
         <Head>
-          <link rel='preconnect' href='https://fonts.googleapis.com' />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
-            rel='preconnect'
-            href='https://fonts.gstatic.com'
-            crossOrigin='anonymous'
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="anonymous"
           />
           <link
-            href='https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins&display=swap'
-            rel='stylesheet'
+            href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins&display=swap"
+            rel="stylesheet"
           />
 
           <link
-            rel='stylesheet'
-            href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'
-            integrity='sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=='
-            crossOrigin='anonymous'
-            referrerPolicy='no-referrer'
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossOrigin="anonymous"
+            referrerPolicy="no-referrer"
           />
         </Head>
         <body>
@@ -353,12 +353,13 @@ const ProjectContent = (props) => {
 
   return (
     <div className={classes.projectDetail}>
-      <div className='container section mvh-100 projectDetail'>
-        <Link href='/projects/'>
+      <div className="container section mvh-100 projectDetail">
+        <Link href="/projects/">
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className='btn btn-filled'>
+            className="btn btn-filled"
+          >
             View All Projects
           </motion.button>
         </Link>
@@ -366,14 +367,14 @@ const ProjectContent = (props) => {
         <div className={classes.card}>
           <div className={classes.projectLinks}>
             {project.githubLink && (
-              <a href={project.githubLink} target='_blank' rel='noreferrer'>
-                <i className='fab fa-github'></i>
+              <a href={project.githubLink} target="_blank" rel="noreferrer">
+                <i className="fab fa-github"></i>
                 Github
               </a>
             )}
             {project.liveLink && (
-              <a href={project.liveLink} target='_blank' rel='noreferrer'>
-                <i className='fas fa-link'></i>
+              <a href={project.liveLink} target="_blank" rel="noreferrer">
+                <i className="fas fa-link"></i>
                 Website
               </a>
             )}
@@ -389,33 +390,35 @@ const ProjectContent = (props) => {
           {project.image && (
             <div className={classes.projectImage}>
               <Image
-                src={`../../portfolio/images/projects/${project.image}`}
+                src={`../../images/projects/${project.image}`}
                 width={500}
                 height={360}
-                alt=''
+                alt=""
               />
             </div>
           )}
 
           <ReactMarkdown
             components={customRenderers}
-            rehypePlugins={[rehypeRaw]}>
+            rehypePlugins={[rehypeRaw]}
+          >
             {content}
           </ReactMarkdown>
 
           {project.screenshots && (
-            <div className='mb-50'>
+            <div className="mb-50">
               <h2>Screenshots</h2>
               <Swiper
                 rewind={true}
                 grabCursor={true}
                 modules={[Navigation]}
                 navigation={true}
-                className='mySwiper'>
+                className="mySwiper"
+              >
                 {project.screenshots.map((screenshot, index) => (
                   <SwiperSlide key={index}>
                     <Image
-                      src={`../../portfolio/images/projects/${project.slug}/${screenshot.screenshot}`}
+                      src={`../../images/projects/${project.slug}/${screenshot.screenshot}`}
                       width={1000}
                       height={700}
                       alt={screenshot.description}

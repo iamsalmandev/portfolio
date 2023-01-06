@@ -25,7 +25,7 @@ const FeaturedProjectItem = (props) => {
               <a>
                 <div className={classes.card}>
                   <Image
-                    src={`/portfolio/images/projects/${project.image}`}
+                    src={`/images/projects/${project.image}`}
                     width={600}
                     height={460}
                     alt={project.title}
@@ -40,20 +40,20 @@ const FeaturedProjectItem = (props) => {
 
             <div className={classes.projectLinks}>
               {project.githubLink && (
-                <a href={project.githubLink} target='_blank' rel='noreferrer'>
-                  <i className='fab fa-github'></i>
+                <a href={project.githubLink} target="_blank" rel="noreferrer">
+                  <i className="fab fa-github"></i>
                   Github
                 </a>
               )}
               {project.liveLink && (
-                <a href={project.liveLink} target='_blank' rel='noreferrer'>
-                  <i className='fas fa-link'></i>
+                <a href={project.liveLink} target="_blank" rel="noreferrer">
+                  <i className="fas fa-link"></i>
                   Website
                 </a>
               )}
               <Link href={`/projects/${project.slug}`}>
                 <a>
-                  <i className='fa fa-circle-info'></i>
+                  <i className="fa fa-circle-info"></i>
                   Project details
                 </a>
               </Link>
