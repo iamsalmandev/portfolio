@@ -4,9 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     loader: 'akamai',
-    path: isProd
-      ? 'https://renebitter.github.io/'
-      : 'http://localhost:3000/portfolio',
+    path: isProd ? 'https://iamsalmandev.vercel.app' : 'http://localhost:3000/',
   },
   basePath: '/portfolio',
 };

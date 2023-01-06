@@ -35,16 +35,14 @@ const Hero = () => {
       <div className={classes.container}>
         <div className={classes.row}>
           <div className={classes.columnLeft}>
-            <h3 data-aos='fade-left'>Hi, my name is Rene.</h3>
-            <h1 data-aos='fade-right'>
-              I&apos;m a React Front End Developer experienced in e-commerce.
-            </h1>
-            <p data-aos='fade-left' data-aos-delay='150'>
+            <h3 data-aos="fade-left">Hi, my name is Salman</h3>
+            <h1 data-aos="fade-right">I&apos;m a React Front End Developer.</h1>
+            <p data-aos="fade-left" data-aos-delay="150">
               I&apos;m fluent in{' '}
               <span>
                 <Image
-                  src='/portfolio/images/usa.png'
-                  alt='usa-flag'
+                  src="/portfolio/images/usa.png"
+                  alt="usa-flag"
                   width={16}
                   height={16}
                 />
@@ -52,26 +50,17 @@ const Hero = () => {
               English,{' '}
               <span>
                 <Image
-                  src='/portfolio/images/germany.png'
-                  alt='usa-flag'
+                  src="/portfolio/images/pakistan-flag.png"
+                  alt="pak-flag"
                   width={16}
                   height={16}
                 />
               </span>{' '}
-              German,{' '}
+              Urdu and{' '}
               <span>
                 <Image
-                  src='/portfolio/images/brazil.png'
-                  alt='usa-flag'
-                  width={16}
-                  height={16}
-                />
-              </span>{' '}
-              Portuguese and{' '}
-              <span>
-                <Image
-                  src='/portfolio/images/js.png'
-                  alt='usa-flag'
+                  src="/portfolio/images/js.png"
+                  alt="usa-flag"
                   width={16}
                   height={16}
                 />
@@ -80,54 +69,63 @@ const Hero = () => {
             </p>
             <div className={classes.socialMedia}>
               <a
-                href='https://github.com/renebitter'
-                target='_blank'
-                rel='noreferrer'>
-                <i className='fab fa-github' data-aos='flip-up'></i>
+                href="https://github.com/renebitter"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-github" data-aos="flip-up"></i>
               </a>
               <a
-                href='https://www.linkedin.com/in/rene-bitter/'
-                target='_blank'
-                rel='noreferrer'>
+                href="https://www.linkedin.com/in/rene-bitter/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i
-                  className='fab fa-linkedin'
-                  data-aos='flip-up'
-                  data-aos-delay='50'></i>
+                  className="fab fa-linkedin"
+                  data-aos="flip-up"
+                  data-aos-delay="50"
+                ></i>
               </a>{' '}
               <a
-                href='https://twitter.com/devrbitter'
-                target='_blank'
-                rel='noreferrer'>
+                href="https://twitter.com/devrbitter"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i
-                  className='fab fa-twitter'
-                  data-aos='flip-up'
-                  data-aos-delay='100'></i>
+                  className="fab fa-twitter"
+                  data-aos="flip-up"
+                  data-aos-delay="100"
+                ></i>
               </a>{' '}
               <a
-                href='https://codepen.io/rbitterdev'
-                target='_blank'
-                rel='noreferrer'>
+                href="https://codepen.io/rbitterdev"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i
-                  className='fab fa-codepen'
-                  data-aos='flip-up'
-                  data-aos-delay='150'></i>
+                  className="fab fa-codepen"
+                  data-aos="flip-up"
+                  data-aos-delay="150"
+                ></i>
               </a>
             </div>
             <div className={classes.ctaButtons}>
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className='btn btn-filled'
-                data-aos='fade-up'
-                onClick={buttonHandler}>
+                className="btn btn-filled"
+                data-aos="fade-up"
+                onClick={buttonHandler}
+              >
                 My Work
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className='btn btn-outlined'
-                data-aos='fade-down'
-                onClick={showModalHandler}>
+                className="btn btn-outlined"
+                data-aos="fade-down"
+                onClick={showModalHandler}
+              >
                 Let&apos;s Talk
               </motion.button>
             </div>
@@ -135,20 +133,22 @@ const Hero = () => {
 
           <div className={`${classes.columnRight} ${classes.profilePic}`}>
             <Image
-              src='/portfolio/images/profile-pic.webp'
+              src="/portfolio/images/salman.jpeg"
               width={460}
               height={460}
-              alt='profile-pic'
-              data-aos='fade-left'
+              alt="profile-pic"
+              data-aos="fade-left"
+              style={{ transform: 'rotate(7deg)' }}
             />
           </div>
         </div>
-        <div className='iconScrollContainer'>
-          <a href='#projects'>
+        <div className="iconScrollContainer">
+          <a href="#projects">
             <div
-              className='iconScroll'
-              data-aos='fade-down'
-              data-aos-offset='50'></div>
+              className="iconScroll"
+              data-aos="fade-down"
+              data-aos-offset="50"
+            ></div>
           </a>
         </div>
       </div>
