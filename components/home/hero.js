@@ -98,7 +98,7 @@ const Hero = () => {
                 ></i>
               </a>{" "}
               <a
-                href="https://codepen.io/iamsalmandev"
+                href="https://codepen.io/@iamsalmandev"
                 target="_blank"
                 rel="noreferrer"
               >
