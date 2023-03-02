@@ -1,10 +1,10 @@
-import Head from 'next/head';
-import Hero from '../components/home/hero';
-import FeaturedProjects from '../components/home/featuredProjects/featuredProjects';
-import FeaturedPosts from '../components/home/featuredPosts';
-import About from '../components/home/about';
-import { getFeaturedPosts } from '../util/posts-util';
-import { getFeaturedProjects } from '../util/projects-util';
+import Head from "next/head";
+import Hero from "../components/home/hero";
+import FeaturedProjects from "../components/home/featuredProjects/featuredProjects";
+import FeaturedPosts from "../components/home/featuredPosts";
+import About from "../components/home/about";
+import { getFeaturedPosts } from "../util/posts-util";
+import { getFeaturedProjects } from "../util/projects-util";
 
 // TODO: rename posts to featuredPosts
 
@@ -12,10 +12,10 @@ export default function Home(props) {
   return (
     <>
       <Head>
-        <title>Rene Bitter &lt;Web Developer /&gt;</title>
+        <title>Salman &lt;Web Developer /&gt;</title>
         <meta
-          name='description'
-          content='My personal web development portfolio including various frontend and fullstack projects as well as web development blog articles. Tech-Stack: React, Next.js, Redux, Typescript, Node.js, Express, MongoDB, Bootstrap, Shopware.'
+          name="description"
+          content="My personal web development portfolio including various frontend and fullstack projects as well as web development blog articles. Tech-Stack: React, Next.js, Redux, Typescript, Node.js, Express, MongoDB, Bootstrap, Blockchain."
         />
       </Head>
       <Hero />

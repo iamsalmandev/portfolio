@@ -1,16 +1,16 @@
-import classes from './hero.module.scss';
-import Image from 'next/image';
-import { useState, useEffect } from 'react';
-import Modal from '../layout/modal/modal';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { motion, AnimatePresence } from 'framer-motion';
+import classes from "./hero.module.scss";
+import Image from "next/image";
+import { useState, useEffect } from "react";
+import Modal from "../layout/modal/modal";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Hero = () => {
   const [showModal, setShowModal] = useState();
 
   function buttonHandler() {
-    window.location.href = '#projects';
+    window.location.href = "#projects";
   }
 
   function showModalHandler() {
@@ -22,8 +22,8 @@ const Hero = () => {
   }
 
   useEffect(() => {
-    if (showModal) document.body.style.overflow = 'hidden';
-    if (!showModal) document.body.style.overflow = 'unset';
+    if (showModal) document.body.style.overflow = "hidden";
+    if (!showModal) document.body.style.overflow = "unset";
   }, [showModal]);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ const Hero = () => {
             <h3 data-aos="fade-left">Hi, my name is Salman</h3>
             <h1 data-aos="fade-right">I&apos;m a React Front End Developer.</h1>
             <p data-aos="fade-left" data-aos-delay="150">
-              I&apos;m fluent in{' '}
+              I&apos;m fluent in{" "}
               <span>
                 <Image
                   src="/images/usa.png"
@@ -46,8 +46,8 @@ const Hero = () => {
                   width={16}
                   height={16}
                 />
-              </span>{' '}
-              English,{' '}
+              </span>{" "}
+              English,{" "}
               <span>
                 <Image
                   src="/images/pakistan-flag.png"
@@ -55,8 +55,8 @@ const Hero = () => {
                   width={16}
                   height={16}
                 />
-              </span>{' '}
-              Urdu and{' '}
+              </span>{" "}
+              Urdu and{" "}
               <span>
                 <Image
                   src="/images/js.png"
@@ -64,19 +64,19 @@ const Hero = () => {
                   width={16}
                   height={16}
                 />
-              </span>{' '}
+              </span>{" "}
               Javascript.
             </p>
             <div className={classes.socialMedia}>
               <a
-                href="https://github.com/renebitter"
+                href="https://github.com/iamsalmandev"
                 target="_blank"
                 rel="noreferrer"
               >
                 <i className="fab fa-github" data-aos="flip-up"></i>
               </a>
               <a
-                href="https://www.linkedin.com/in/rene-bitter/"
+                href="https://www.linkedin.com/in/muhammad-salman-dev"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -85,9 +85,9 @@ const Hero = () => {
                   data-aos="flip-up"
                   data-aos-delay="50"
                 ></i>
-              </a>{' '}
+              </a>{" "}
               <a
-                href="https://twitter.com/devrbitter"
+                href="https://twitter.com/iamsalmandev"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -96,9 +96,9 @@ const Hero = () => {
                   data-aos="flip-up"
                   data-aos-delay="100"
                 ></i>
-              </a>{' '}
+              </a>{" "}
               <a
-                href="https://codepen.io/rbitterdev"
+                href="https://codepen.io/iamsalmandev"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -138,7 +138,7 @@ const Hero = () => {
               height={460}
               alt="profile-pic"
               data-aos="fade-left"
-              style={{ transform: 'rotate(7deg)' }}
+              style={{ transform: "rotate(7deg)" }}
             />
           </div>
         </div>
