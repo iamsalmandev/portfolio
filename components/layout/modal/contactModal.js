@@ -1,15 +1,16 @@
-import classes from './contactModal.module.scss';
-import { useForm, ValidationError } from '@formspree/react';
-import { motion } from 'framer-motion';
+import classes from "./contactModal.module.scss";
+import { useForm, ValidationError } from "@formspree/react";
+import { motion } from "framer-motion";
 
 function ContactModal(props) {
-  const [state, handleSubmit] = useForm('mdobjbdw');
+  const [state, handleSubmit] = useForm("mleknldw");
 
   if (state.submitting) {
     return (
       <div className={classes.modal}>
         <div
-          className={`${classes.contactModal} ${classes.contactModalConfirmation}`}>
+          className={`${classes.contactModal} ${classes.contactModalConfirmation}`}
+        >
           <div>
             <h2>Sending Message</h2>
             <p>
@@ -19,10 +20,11 @@ function ContactModal(props) {
             </p>
             <div className={classes.linkedinLink}>
               <a
-                href='https://www.linkedin.com/in/rene-bitter/'
-                target='_blank'
-                rel='noreferrer'>
-                <i className='fab fa-linkedin'></i>
+                href="https://www.linkedin.com/in/muhammad-salman-dev"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-linkedin"></i>
               </a>
             </div>
           </div>
@@ -35,9 +37,10 @@ function ContactModal(props) {
     return (
       <div className={classes.modal}>
         <div
-          className={`${classes.contactModal} ${classes.contactModalConfirmation}`}>
-          <a href='#!' className={classes.close} onClick={props.onClose}>
-            <i className='fa fa-xmark'></i>
+          className={`${classes.contactModal} ${classes.contactModalConfirmation}`}
+        >
+          <a href="#!" className={classes.close} onClick={props.onClose}>
+            <i className="fa fa-xmark"></i>
           </a>
           <div>
             <h2>Thanks for your contact!</h2>
@@ -48,10 +51,11 @@ function ContactModal(props) {
             </p>
             <div className={classes.linkedinLink}>
               <a
-                href='https://www.linkedin.com/in/rene-bitter/'
-                target='_blank'
-                rel='noreferrer'>
-                <i className='fab fa-linkedin'></i>
+                href="https://www.linkedin.com/in/muhammad-salman-dev"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-linkedin"></i>
               </a>
             </div>
           </div>
@@ -60,8 +64,9 @@ function ContactModal(props) {
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className='btn btn-filled'
-              onClick={props.onClose}>
+              className="btn btn-filled"
+              onClick={props.onClose}
+            >
               OK
             </motion.button>
           </div>
@@ -72,33 +77,34 @@ function ContactModal(props) {
   return (
     <div div className={classes.modal}>
       <div className={classes.contactModal}>
-        <a href='#!' className={classes.close} onClick={props.onClose}>
-          <i className='fa fa-xmark'></i>
+        <a href="#!" className={classes.close} onClick={props.onClose}>
+          <i className="fa fa-xmark"></i>
         </a>
 
         <h2>Contact me</h2>
 
         <form
-          id='contactForm'
+          id="contactForm"
           className={classes.contactForm}
-          onSubmit={handleSubmit}>
+          onSubmit={handleSubmit}
+        >
           <div className={classes.row}>
             <div className={classes.inputField}>
-              <label htmlFor='email'>Email Address</label>
-              <input id='email' type='email' name='email' required />
+              <label htmlFor="email">Email Address</label>
+              <input id="email" type="email" name="email" required />
 
               <ValidationError
-                prefix='Email'
-                field='email'
+                prefix="Email"
+                field="email"
                 errors={state.errors}
               />
             </div>
           </div>
           <div className={classes.inputField}>
-            <textarea id='message' name='message' required />
+            <textarea id="message" name="message" required />
             <ValidationError
-              prefix='Message'
-              field='message'
+              prefix="Message"
+              field="message"
               errors={state.errors}
             />
           </div>
@@ -106,19 +112,21 @@ function ContactModal(props) {
           <div className={classes.action}>
             <div className={classes.linkedinLink}>
               <a
-                href='https://www.linkedin.com/in/rene-bitter/'
-                target='_blank'
-                rel='noreferrer'>
-                <i className='fab fa-linkedin'></i>
+                href="https://www.linkedin.com/in/muhammad-salman-dev"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-linkedin"></i>
               </a>
             </div>
             <div className={classes.sendLink}>
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                type='submit'
+                type="submit"
                 disabled={state.submitting}
-                className='btn btn-filled'>
+                className="btn btn-filled"
+              >
                 Send Message
               </motion.button>
             </div>
