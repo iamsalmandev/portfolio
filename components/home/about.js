@@ -22,7 +22,7 @@ const About = () => {
             </h3>
             <p>
               A MERN stack developer and Blockchain Enthusiast, with more than
-              five years of working experience. I've a good understanding of
+              five years of working experience. I have a good understanding of
               typescript, javascript, ES6, React.js, React Native and a fair
               knowledge of good coding practices i.e separation of concerns,
               encapsulation and code splitting.
@@ -38,17 +38,20 @@ const About = () => {
             </p>
 
             <p>
-              I've worked with graphql, Gatsby, styled-components material-ui
+              I have worked with graphql, Gatsby, styled-components material-ui
               and many other third party services like algolia, get-stream and
               bugsnag. Strong Hands-on experience in CI/CD tools like Git and
-              bit bucket. I've also worked with many Ethereum Blockchain based
+              bit bucket. I have also worked with many Ethereum Blockchain based
               projects while working with block360 - a service based company in
               the domain of blockchain.
             </p>
             <p>
-              Besides web development, I'm very passionate about travelling. I
+              Besides web development, I am very passionate about travelling. I
               got the cahnce to travell across the hilly terrains of Northern
-              areas of Pakistan.
+              areas of Pakistan. I am no stranger to multiculturalism and I
+              appreciate diversity as well as discovering and experiencing new
+              cultures. Loving nature and being outdoors makes my favorite
+              pastime hiking and mountain climbing.
             </p>
           </div>
 
