@@ -5,8 +5,6 @@
     - Next.js
   description: >-
     Next.js project using next-auth library and JWT to handle authentication.
-  liveLink: https://nextjs-authentication-eight.vercel.app/
-  githubLink: https://github.com/renebitter/nextjs-authentication
   image: nextjs-auth.png
   isFeatured: false
 ---
