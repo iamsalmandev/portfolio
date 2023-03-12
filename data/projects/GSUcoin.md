@@ -1,16 +1,16 @@
 ---
   title: GSUcoin.app
   tech:
-    - Nextjs
-    - Reactjs
+    - Next.js
+    - React
     - Context
     - GraphQl
     - Blockchain
-    - web3
-    - theme-ui
+    - Web3
+    - Theme-ui
     - Typescript
     - Ethereum 
-    - docker
+    - Docker
   description: >-
    A platform that allows Borrowing GSUc, a Stablecoin, using crypto as your collateral. 
   liveLink: https://gsucoin.app/

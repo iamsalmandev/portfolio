@@ -1,14 +1,14 @@
 ---
   title: yogainternational
   tech:
-    - gatsby
+    - Gatsby
     - React
     - React Native
     - Typescript
     - Postgres
     - Graphql
     - Apollo Client
-    - bugsnag
+    - Bugsnag
     - Cypress
     - Algolia
     - ContentFul
@@ -16,7 +16,7 @@
     - Express
     - Git
     - Material-ui
-    - styled-components
+    - Styled-components
   description: This is a MERN Fullstack project with authentication and CRUD functionality.
   liveLink: https://yogainternational.com/
   image: yogainternational.png

@@ -9,10 +9,10 @@
     - Hardhat
     - Typescript
     - Node
-    - web3
+    - Web3
     - Express
     - Material-ui
-    - docker
+    - Docker
     - Styled-components
   description: >-
     Reals make investment affordable and easy for everyone by dividing ventures and projects into affordable digital shares called tokens

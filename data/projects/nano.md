@@ -10,6 +10,7 @@
     - Blockchain
     - Hardhat
     - Solidity
+    - Typescript
   description: >-
     Nano is a gamified sustainability platform aimed to help you take baby steps towards living a more eco-friendly lifestyle!
   liveLink: https://www.block360.io/case-studies/nano

@@ -4,7 +4,7 @@
     - gatsby
     - Graphql
     - SQL
-    - Reactjs
+    - React
   description: Shopbiz is a marketing platform.
   liveLink: https://shopbizservices.com/
   image: shopbiz.png
